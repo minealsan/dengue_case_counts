@@ -1,0 +1,21 @@
+name: dengue-case-counts
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12           # or your desired version
+  - pip= 25.2                  # needed to run pip installs
+  - numpy=2.3.2
+  - pandas=2.3.2
+  - scikit-learn=1.7.1
+  - matplotlib =3.10.5            # if you do any plotting
+  - xgboost=3.0.4                # if you’re using XGBoost
+  - lightgbm=4.6.0               # if you’re using LightGBM
+  - catboost=1.2.8            # if you’re using CatBoost
+  - streamlit=1.48.1
+  - seaborn=0.13.2
+  - plotly=6.3.0
+
+  - pip:
+    - -r requirements.txt
